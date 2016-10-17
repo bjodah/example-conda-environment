@@ -1,13 +1,14 @@
 name: example-environment
-
+channels:
+  - conda-forge
+  - bjodah
 dependencies:
-  - python=3.4
+  - python=3.5
+  - notebook
   - numpy
-  - toolz
   - matplotlib
-  - dill
-  - pandas
-  - partd
-  - bokeh
-  - pip:
-    - git+https://github.com/blaze/dask.git#egg=dask[complete]
+  - scipy
+  - pycvodes
+  - pycompilation
+  - pycodeexport
+  - pyodesys
